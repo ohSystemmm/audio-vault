@@ -1,0 +1,2 @@
+pyqt6 # For the GUI
+pyinstaller # For building the application
