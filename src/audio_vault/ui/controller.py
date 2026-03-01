@@ -10,8 +10,8 @@ class AudioVaultApp(QMainWindow):
         ui_path = Path(__file__).parent / "view" / "main_window.ui"
         uic.loadUi(ui_path, self)
         
-        self.btn_import.clicked.connect(self.open_file_dialog)
-        self.showMaximized()
+        # self.btn_import.clicked.connect(self.open_file_dialog)
+        self.show()
         css_path = Path(__file__).parent / "view" / "css" / "main_window.css"
         self.load_stylesheet(css_path)
 
@@ -27,7 +27,7 @@ class AudioVaultApp(QMainWindow):
             self, 
             "Select Audio or Excel File", 
             "", 
-            "All Files (*);;Excel Files (*.xlsx *.xls);;Audio Files (*.mp3 *.wav)"
+            "All Files (*);;Excel Files (*.xlsx *.xls)"
         )
         
         if file_path:
