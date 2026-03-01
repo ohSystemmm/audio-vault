@@ -1,0 +1,93 @@
+/* ================= MAIN WINDOW ================= */
+QMainWindow {
+    background-color: #0E0E11;
+}
+
+QWidget {
+    font-family: "Segoe UI";
+}
+
+/* ================= TITLE ================= */
+#lb_title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 4px;
+}
+
+/* ================= SUBTITLE ================= */
+#lb_subtitle {
+    font-size: 13px;
+    font-weight: 500;
+    color: #8A8F98;
+    margin-bottom: 28px;
+}
+
+/* ================= SECTION LABEL ================= */
+#lb_recent {
+    font-size: 12px;
+    font-weight: 600;
+    color: #5C6270;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+/* ================= LIST ================= */
+#listWidget {
+    background-color: #15171C;
+    border: 1px solid #1F222A;
+    border-radius: 16px;
+    padding: 8px;
+    color: #C8CCD4;
+    outline: none;
+}
+
+#listWidget::item {
+    padding: 16px;
+    border-radius: 10px;
+}
+
+#listWidget::item:hover {
+    background-color: #1D2128;
+}
+
+#listWidget::item:selected {
+    background-color: #3A7AFE;
+    color: white;
+}
+
+/* ================= SCROLLBAR ================= */
+QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 6px 0 6px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #2A2E36;
+    border-radius: 3px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* ================= BUTTON ================= */
+#btn_import {
+    background-color: #3A7AFE;
+    color: white;
+    border-radius: 24px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#btn_import:hover {
+    background-color: #5B8CFF;
+}
+
+#btn_import:pressed {
+    background-color: #2F66E0;
+}

@@ -10,12 +10,19 @@ class AudioVaultApp(QMainWindow):
         ui_path = Path(__file__).parent / "view" / "main_window.ui"
         uic.loadUi(ui_path, self)
         
-        # Connect the button click to our function
         self.btn_import.clicked.connect(self.open_file_dialog)
         self.showMaximized()
+        css_path = Path(__file__).parent / "view" / "css" / "main_window.css"
+        self.load_stylesheet(css_path)
+
+    def load_stylesheet(self, file_path):
+        try:
+            with open(file_path, "r") as f:
+                self.setStyleSheet(f.read())
+        except FileNotFoundError:
+            print(f"Error: The CSS file was not found at {file_path}")
 
     def open_file_dialog(self):
-        # Open file explorer
         file_path, _ = QFileDialog.getOpenFileName(
             self, 
             "Select Audio or Excel File", 
