@@ -1,4 +1,4 @@
-from audio_vault.ui.controller import InitUI # type: ignore
+from audio_vault.ui.controller import init_ui # type: ignore
 
 if __name__ == "__main__":
-    InitUI()
+    init_ui()
