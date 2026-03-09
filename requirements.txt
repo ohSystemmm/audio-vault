@@ -1,2 +1,5 @@
-pyqt6 # For the GUI
-pyinstaller # For building the application
+openpyxl>=3.1.2
+yt-dlp>=2023.12.30
+spotipy>=2.23.0
+python-dotenv>=1.0.1
+requests>=2.31.0
