@@ -1,5 +1,5 @@
-openpyxl>=3.1.2
-yt-dlp>=2023.12.30
-spotipy>=2.23.0
-python-dotenv>=1.0.1
-requests>=2.31.0
+pyqt6 # For the GUI
+pyinstaller # For building the application
+pandas # For Excel file handling
+openpyxl # Required by pandas for .xlsx files
+yt-dlp # For downloading YouTube videos/audio
